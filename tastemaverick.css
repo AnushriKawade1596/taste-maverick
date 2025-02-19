@@ -1,0 +1,114 @@
+body {
+    background:url('background2.jpg') no-repeat center center fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+    
+}
+.form-heading {
+    text-align: top;
+    font-size: 40px;
+    font-style: Bernard MT Condensed;
+    color:#060603;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.heading-box {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 60%; /* Adjust width */
+    max-width: 500px; /* Keeps it responsive */
+    margin-bottom: 15px; /* Space between heading and form */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+input, select, textarea {
+    width: 80%; /* Makes inputs stretch to full width */
+    padding: 14px; /* Increases height and adds space inside */
+    font-size: 16px; /* Increases text size */
+    border-radius: 5px; /* Adds rounded corners */
+    border: 1px solid #ccc; /* Adds a light border */
+    margin-top: 5px;
+}
+  
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background:rgba(0, 0, 0, 0.7);;
+    padding: 30px;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 50%;
+    max-width: 500px;
+}
+#step1 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+#step2 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+#step3 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+#step4 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+#step5 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+#step6 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+
+
+.form-step {
+    display: none;
+}
+.form-step.active {
+    display: block;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background: #b8860b;
+}

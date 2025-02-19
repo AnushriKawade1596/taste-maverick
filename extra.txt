@@ -1,0 +1,14 @@
+<label for="age">AGE</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+
+            <label for ="weight">WEIGHT</label>
+            <input type="number" id="weight" name="weight" placeholder="Enter your weight">
+
+            <label for="height">Height</label>
+
+
+
+
+
+
+            background-color: #f4f4f4;
