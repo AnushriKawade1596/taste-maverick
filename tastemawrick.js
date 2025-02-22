@@ -1,15 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
     let currentStep = 1;
-    const totalSteps = 6;
+    const totalSteps = 7;
 
-    function showStep(step) {
+
+    function showStep(step) 
+    {
         document.querySelectorAll(".form-step").forEach((formStep) => {
             formStep.classList.remove("active");
         });
+        
 
         document.getElementById(`step${step}`).classList.add("active");
-    }
 
+        if (step === totalSteps) {
+            document.querySelector("#step7 button[type='submit']").style.display = "block"; // Show submit
+        } else {
+            document.querySelector("#step7 button[type='submit']").style.display = "none"; // Hide submit
+        }
+        
+        if (step === 7) 
+            {
+            suggestMenu();
+            }
+            
+    }
     function validateStep(step) {
         const inputs = document.querySelectorAll(`#step${step} input[required]`);
         let valid = true;
@@ -25,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         return valid;
     }
+    
 
     window.nextStep = function (stepNumber) {
         if (validateStep(stepNumber)) {
@@ -74,3 +89,28 @@ window.submitForm = function () {
         alert('There was an error submitting the form.');
     });
 };
+
+function suggestMenu() {
+    const age = document.getElementById("age").value;
+    const mood = document.querySelector('input[name="mood"]:checked')?.value || "neutral";
+    const allergies = document.getElementById("allergies").value.toLowerCase();
+    
+    let menu = "Balanced Diet: Rice, Vegetables, and Protein.";
+
+    if (mood === "happy") {
+        menu = "Cheerful Treat: Ice Cream & Pasta!";
+    } else if (mood === "sad") {
+        menu = "Comfort Food: Warm Soup & Brownie.";
+    } else if (mood === "energetic") {
+        menu = "High Energy: Protein Shake & Nuts!";
+    }
+
+    if (allergies.includes("nuts")) {
+        menu += " (Avoid nuts due to allergy)";
+    }
+
+    document.getElementById("menu-suggestion").innerText = menu;
+}
+
+// Call this function when the user reaches Form 7
+document.getElementById("form7").addEventListener("click", suggestMenu);

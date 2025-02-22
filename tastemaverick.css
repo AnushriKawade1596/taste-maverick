@@ -93,6 +93,25 @@ input, select, textarea {
     text-transform: uppercase; /* Optional: Make it uppercase */
 }
 
+#step7 h3 {
+    color: white; /* Change this to any color you like */
+    font-size: 36px; /* Adjust font size if needed */
+    text-transform: uppercase; /* Optional: Make it uppercase */
+}
+#step7 button[type="submit"] {
+    display: none;
+}
+#menu-box{
+    background-color: #f2f2f2;
+    padding: 50px;
+    box-shadow: 0;
+    border: chartreuse;
+    text-align: center;
+    font-size: medium ;
+    font-family: Arial, sans-serif;
+
+}
+
 
 .form-step {
     display: none;

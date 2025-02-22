@@ -12,6 +12,7 @@
     <h1 class="form-heading" ></h1>
     <div class="container">
         <form id="multiStepForm">
+            
 
             <div class="form-step active" id="step1">
                 <h3>Step 1: Personal Info</h3>
@@ -82,10 +83,20 @@
                 <option value="Sugar-free">SUGAR FREE</option>
             </select><br>
             <button type="button" onclick="prevStep(6)">Previous</button>
-                <button type="submit">Submit</button>
+            <button type="button" onclick="nextStep(6)">Next</button>     
             </div>
 
-
+            <div class = "form-step"id ="step7">
+                <h3>step 7: Menu</h3> 
+                <div id="menu-box">       
+                    <h2>Suggested Menu</h2>
+                    <p id="menu-suggestion"></p>
+                </div>
+                    <button type="button" onclick="prevStep(6)">Previous</button>
+                    <button type="submit">Submit</button>
+                
+                
+            </div>
 
         </form>
     </div>
